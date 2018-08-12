@@ -23,7 +23,7 @@ pipeline {
         script {
           dockerBuild(
             imageName: 'herro',
-            imageTags: [SHA, 'latest'],
+            imageTags: [SHA],
             gitSha: SHA,
             dockerFile: 'Dockerfile',
             pushImage: true
