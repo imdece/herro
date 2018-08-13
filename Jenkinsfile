@@ -26,7 +26,7 @@ pipeline {
             imageTags: [SHA],
             gitSha: SHA,
             dockerFile: 'Dockerfile',
-            pushImage: true
+            pushImage: true,
             tagWithLatest: true
           )
         }
