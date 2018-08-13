@@ -2,6 +2,8 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+containerPort: 3000
+healthCheckPath: /
 replicaCount: 1
 revisionHistoryLimitCount: 5
 
@@ -17,7 +19,7 @@ imageCredentials:
 
 service:
   type: ClusterIP
-  port: 80
+  port: 3000
 
 ingress:
   enabled: false
