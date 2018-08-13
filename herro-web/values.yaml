@@ -3,6 +3,7 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
+revisionHistoryLimitCount: 5
 
 image:
   repository: docker.invoice2go.io/herro

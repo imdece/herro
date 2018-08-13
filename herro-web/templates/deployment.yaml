@@ -9,6 +9,7 @@ metadata:
     heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  revisionHistoryLimit: {{ .Values.revisionHistoryLimitCount }}
   selector:
     matchLabels:
       app: {{ template "chart.name" . }}
