@@ -13,6 +13,11 @@ app.get('/', function (req, res) {
   res.end();
 });
 
+app.get('/i2g-status', function (req, res) {
+  res.write("OK\n");
+  res.end();
+});
+
 app.listen(PORT, function () {
   console.log(`Server is listening on port ${PORT}`);
 });
