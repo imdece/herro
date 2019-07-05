@@ -12,7 +12,7 @@ pipeline {
   }
 
   environment {
-    SHA = sh(script: 'git rev-parse HEAD', returnStdout: true).trim()
+    SHA = sh(script: 'git rev-parse HEAD | cut -c -8', returnStdout: true).trim()
     GIT_COMMIT_DETAIL = sh(script: "git log --pretty=format:'Commit: %h _%s_, By *%an*' --abbrev-commit -1", returnStdout: true)
     SLACK_CHANNEL = 'tmp'
   }
