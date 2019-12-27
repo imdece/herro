@@ -4,9 +4,13 @@
   "description": "herro world!",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "ci-pretest": "npm run lint-check && npm run format-check",
+    "ci-test": "docker-compose -f docker-compose.ci.yml run herro sh -c 'npm run test'",
+    "docker-start": "node server.js",
+    "format-check": "echo format",
+    "lint-check": "echo lint",
     "start": "node server.js",
-    "docker-start": "node server.js"
+    "test": "echo test"
   },
   "author": "",
   "license": "ISC",

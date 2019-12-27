@@ -1,0 +1,7 @@
+---
+version: "3"
+services:
+  herro:
+    image: 'registry.invoice2go.io/i2g/herro:${DOCKER_SHA}'
+    environment:
+      - 'NODE_ENV=test'

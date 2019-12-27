@@ -1,5 +1,4 @@
-FROM "docker.invoice2go.io/itg-node:8.9.0"
-COPY --chown=node:node package.json package-lock.json ./
-RUN gosu node:node npm install
+FROM "registry.invoice2go.io/i2g/itg-node:8.9.0"
+
 COPY --chown=node:node . .
-EXPOSE 3000
+RUN gosu node:node npm install --production=false
