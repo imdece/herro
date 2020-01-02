@@ -2,7 +2,7 @@
 * DO NOT UPDATE THIS FILE: Updating this file may break the breakglass process.
 */
 
-@Library('i2g-jenkins-shared-library@dhruva/update_step_sequence_to_enable_dockerized_ci-pretest') _
+@Library('i2g-jenkins-shared-library') _
 
 /* Declaring variables  */
     def APPLICATION="herro"
