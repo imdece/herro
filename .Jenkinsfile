@@ -3,6 +3,7 @@
 */
 
 @Library('i2g-jenkins-shared-library') _
+import io.invoice2go.ci.retryBuilds
 
 /* Declaring variables  */
     def APPLICATION="herro"
