@@ -18,6 +18,10 @@ app.get('/i2g-status', function (req, res) {
   res.end();
 });
 
+app.get('/5xx', function(res, req, next){
+  res.res.status(500).send("boo :(");;
+} );
+
 app.listen(PORT, function () {
   console.log(`Server is listening on port ${PORT}`);
 });
