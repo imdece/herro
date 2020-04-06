@@ -1,0 +1,4 @@
+xray:
+  enabled: true
+  env: prod
+  daemon-address: 'xray:2000'

@@ -1,0 +1,4 @@
+xray:
+  enabled: true
+  env: qa
+  daemon-address: 'xray:2000'

@@ -1,0 +1,4 @@
+xray:
+  enabled: true
+  env: staging
+  daemon-address: 'xray:2000'

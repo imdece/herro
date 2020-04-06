@@ -1,0 +1,28 @@
+application:
+  name: accountstate
+  send-error-details: true
+  logging:
+    console-colorize: false
+    console-only-level: 'info'
+    level: 'info'
+    pretty-print-console: false
+    rotate-logs: true
+    send-errors-to-raygun: false
+    send-to-logentries: false
+    send-workers-to-file: false
+    slow-request-threshold: 200
+    stringify-console: true
+    worker-file-log-path: '/var/log/i2g/worker-%s.log'
+
+    request-logging:
+      excluded-url-prefixes:
+        - '/i2g-status'
+        - '/i2g-metrics'
+        - '/favicon.ico'
+        - '/docs'
+        - '/api-docs'
+
+xray:
+  enabled: false
+  env: local
+  daemon-address: 'localhost:2000'

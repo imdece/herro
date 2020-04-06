@@ -1,0 +1,4 @@
+xray:
+  enabled: true
+  env: int
+  daemon-address: 'xray:2000'

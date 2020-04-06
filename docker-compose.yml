@@ -9,6 +9,7 @@ services:
     command: ["true"]
     environment:
       - "NODE_ENV=test"
+
 #    depends_on:
 #      - "dynamodb"
 #      - "kinesis"
@@ -16,6 +17,7 @@ services:
 #      - "postgres"
 #      - "pushgateway"
 #      - "redis"
+#      - "xray"
 #  dynamodb:
 #    image: "registry.invoice2go.io/i2g/dynamodb-local:latest"
 #    command: ["-sharedDb"]
@@ -40,3 +42,9 @@ services:
 #      timeout: 10s
 #  pushgateway:
 #    image: "docker.io/prom/pushgateway:v0.9.1"
+#  xray:
+#    image: "amazon/aws-xray-daemon:3.2.0"
+#    environment:
+#      - AWS_REGION=us-west-1
+#    ports:
+#      - "2000:2000/udp"
