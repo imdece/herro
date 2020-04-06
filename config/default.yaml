@@ -1,5 +1,5 @@
 application:
-  name: accountstate
+  name: herro
   send-error-details: true
   logging:
     console-colorize: false
