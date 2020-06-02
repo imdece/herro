@@ -2,7 +2,7 @@
 * DO NOT UPDATE THIS FILE: Updating this file may break the breakglass process.
 */
 
-@Library('i2g-jenkins-shared-library') _
+@Library('i2g-jenkins-shared-library@richard/python') _
 
 /* Declaring variables  */
     def APPLICATION="herro"
@@ -15,7 +15,6 @@ try{
         application: APPLICATION,
         )
 
-    if( "$env.BRANCH_NAME" =~ "${env.BRANCH_REGEX}" ){
         helmfileDeploy(
             imageName: APPLICATION,
             environment: "int"
@@ -47,7 +46,6 @@ try{
             imageName: APPLICATION,
             environment: "prod"
             )
-    }
 
 }catch(exc){
     notifyBuild()
