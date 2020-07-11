@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: Greeting
-    runs-on: mdev-int
+    runs-on: int
     steps:
       - name: Hello-wold
         uses: actions/hello-world-javascript-action@v1
