@@ -1,6 +1,4 @@
 name: ci
-author: imdece
-description: demo app creation
 
 on:
   - push
