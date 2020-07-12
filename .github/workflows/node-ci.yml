@@ -1,8 +1,7 @@
 name: node-ci
 
 on:
-  push:
-    branches: [ dhruva/start_workflow ]
+  - push
 
 jobs:
   build:
