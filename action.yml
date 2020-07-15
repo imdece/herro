@@ -1,0 +1,13 @@
+# action.yml
+name: 'NPM Test'
+description: 'Test node'
+inputs:
+  cmd:  # id of input
+    description: 'cmd'
+    required: true
+    default: 'node --version'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.cmd }}
